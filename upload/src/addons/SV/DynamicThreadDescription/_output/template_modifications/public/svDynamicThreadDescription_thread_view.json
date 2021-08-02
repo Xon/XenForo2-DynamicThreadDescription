@@ -1,0 +1,9 @@
+{
+    "template": "thread_view",
+    "description": "Inject a thread description based on the post in the referrer",
+    "execution_order": 1,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "snippet($firstPost.message",
+    "replace": "snippet(($dynamicRefererPost ? $dynamicRefererPost.message : $firstPost.message)"
+}

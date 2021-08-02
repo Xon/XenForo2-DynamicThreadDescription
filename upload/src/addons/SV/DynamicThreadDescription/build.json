@@ -1,0 +1,8 @@
+{
+    "additional_files": [
+        "js/sv/lib"
+    ],
+    "minify": [
+        "js/sv/lib/page-view.js"
+    ]
+}

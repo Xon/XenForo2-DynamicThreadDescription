@@ -1,0 +1,9 @@
+{
+    "template": "thread_view",
+    "description": "Inject js to update url to match the currently viewed post",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<!--[XF:content_top]-->",
+    "replace": "$0\n<xf:js src=\"sv/lib/page-view.js\" addon=\"SV/DynamicThreadDescription\" min=\"1\" />\n"
+}

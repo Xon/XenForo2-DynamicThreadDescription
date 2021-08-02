@@ -3,7 +3,6 @@
 namespace SV\DynamicThreadDescription\XF\Pub\Controller;
 
 use XF\Mvc\Entity\AbstractCollection;
-use XF\Mvc\Entity\ArrayCollection;
 use XF\Mvc\ParameterBag;
 use XF\Mvc\Reply\View as ViewReply;
 
@@ -30,23 +29,9 @@ class Thread extends XFCP_Thread
 
             if ($thread && \count($posts) !== 0)
             {
-                $request = $this->request();
-                $referrer = $request->filter('_xfRedirect', 'str');
-                if (\strlen($referrer) === 0)
+                $postId = $this->filter('post', 'uint');
+                if ($postId)
                 {
-                    $referrer = $request->getServer('HTTP_X_AJAX_REFERER');
-                    if (\strlen($referrer) === 0)
-                    {
-                        $referrer = $request->getReferrer();
-                    }
-                }
-
-                if (\strlen($referrer) !== 0)
-                {
-                    $routePath = $this->app()->request()->getRoutePathFromUrl($referrer);
-                    $routeMatch = $this->app()->router('public')->routeToController($routePath);
-                    $params = $routeMatch->getParameterBag();
-                    $postId = (int)$params->get('post_id');
                     $post = $posts[$postId] ?? null;
                     $reply->setParam('dynamicRefererPost', $post);
                 }

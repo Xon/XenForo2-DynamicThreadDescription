@@ -1,0 +1,6 @@
+{
+    "from_class": "XF\\ControllerPlugin\\Thread",
+    "to_class": "SV\\DynamicThreadDescription\\XF\\ControllerPlugin\\Thread",
+    "execute_order": 7000,
+    "active": true
+}

@@ -29,12 +29,9 @@ class Thread extends XFCP_Thread
 
             if ($thread && \count($posts) !== 0)
             {
-                $postId = $this->filter('post', 'uint');
-                if ($postId)
-                {
-                    $post = $posts[$postId] ?? null;
-                    $reply->setParam('dynamicRefererPost', $post);
-                }
+                $postId = (int)$this->filter('post', 'uint');
+                $post = $posts[$postId] ?? null;
+                $reply->setParam('dynamicRefererPost', $post);
             }
         }
 

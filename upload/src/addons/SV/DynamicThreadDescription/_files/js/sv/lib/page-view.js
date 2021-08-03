@@ -197,7 +197,6 @@ SV.PageView = SV.PageView || {};
                 clearTimeout(pendingTimer);
                 pendingTimer = null;
             }
-            console.log(+ new Date());
 
             pendingTimer = setTimeout(function()
             {

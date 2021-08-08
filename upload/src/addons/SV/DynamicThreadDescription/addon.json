@@ -2,8 +2,8 @@
     "legacy_addon_id": "",
     "title": "Dynamic thread url & embedding subscriptions",
     "description": "",
-    "version_id": 1000004,
-    "version_string": "1.0.0",
+    "version_id": 1000100,
+    "version_string": "1.0.1",
     "dev": "Atelier Aphelion",
     "dev_url": "https://atelieraphelion.com",
     "faq_url": "",
@@ -14,5 +14,5 @@
         "php": ["7.4.0", "PHP 7.4.0+"],
         "SV/StandardLib": [1010000,"Standard Library by Xon v1.1.0+"]
     },
-    "icon": ""
+    "icon": "fa-anchor"
 }

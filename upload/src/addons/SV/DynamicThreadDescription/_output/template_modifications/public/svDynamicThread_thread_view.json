@@ -5,5 +5,5 @@
     "enabled": true,
     "action": "str_replace",
     "find": "<!--[XF:content_top]-->",
-    "replace": "$0\n<xf:js src=\"sv/lib/page-view.js\" addon=\"SV/DynamicThreadDescription\" min=\"1\" />\n"
+    "replace": "$0\n<xf:if is=\"$xf.options.svUpdateUrlOnThreadPosition\">\n<xf:js src=\"sv/lib/page-view.js\" addon=\"SV/DynamicThreadDescription\" min=\"1\" />\n</xf:if>\n"
 }

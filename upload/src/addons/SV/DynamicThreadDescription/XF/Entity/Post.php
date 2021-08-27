@@ -10,14 +10,14 @@ namespace SV\DynamicThreadDescription\XF\Entity;
  */
 class Post extends XFCP_Post
 {
-/*
+
     public function getLinkToThreadmarkReaderMode(array $extra = [])
     {
         $extra['post'] = $this->post_id;
 
         return parent::getLinkToThreadmarkReaderMode($extra);
     }
-
+/*
     public function getRedirectLinkForThreadmark($canonical = false, $footer = false)
     {
         $thread = $this->Thread;

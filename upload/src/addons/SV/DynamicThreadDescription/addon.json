@@ -1,17 +1,23 @@
 {
     "legacy_addon_id": "",
-    "title": "Dynamic thread url & embedding subscriptions",
+    "title": "Dynamic thread url & descriptions for embedding",
     "description": "",
-    "version_id": 1000300,
+    "version_id": 1702101317,
     "version_string": "1.0.3",
     "dev": "Atelier Aphelion",
     "dev_url": "https://atelieraphelion.com",
     "faq_url": "",
     "support_url": "",
     "extra_urls": [],
-    "require" : {
-        "XF": [2020070, "XenForo 2.2.0+"],
-        "php": ["7.2.0", "PHP 7.2.0+"]
+    "require": {
+        "XF": [
+            2020070,
+            "XenForo 2.2.0+"
+        ],
+        "php": [
+            "7.2.0",
+            "PHP 7.2.0+"
+        ]
     },
     "icon": "fa-anchor"
 }

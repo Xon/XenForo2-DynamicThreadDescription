@@ -224,9 +224,7 @@ SV.PageView = SV.PageView || {};
                 if ($prevPost.length === 0) {
                     // no more posts
                     windowHistory.replaceState(null,null, url);
-                } else {
-                    //console.log('Entering post:' + pendingPostId)
-                    windowHistory.replaceState(null,null, postUrl + postId);
+                    return;
                 }
             } else {
                 // possibly exiting the post
@@ -234,11 +232,12 @@ SV.PageView = SV.PageView || {};
                 if ($nextPost.length === 0) {
                     // no more posts
                     windowHistory.replaceState(null,null, url + '#js-quickReply');
-                } else {
-                    //console.log('Leaving post:' + pendingPostId);
-                    windowHistory.replaceState(null,null, postUrl + postId + '?footer=1');
+                    return;
                 }
             }
+
+            //console.log('Entering post:' + pendingPostId)
+            windowHistory.replaceState(null,null, postUrl + postId);
         }
 
         return {

@@ -1,5 +1,6 @@
 <?php
 /**
+ * @noinspection PhpMissingReturnTypeInspection
  * @noinspection PhpMultipleClassDeclarationsInspection
  */
 

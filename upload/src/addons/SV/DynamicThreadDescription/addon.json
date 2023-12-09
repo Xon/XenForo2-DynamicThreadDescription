@@ -2,13 +2,15 @@
     "legacy_addon_id": "",
     "title": "Dynamic thread url & descriptions for embedding",
     "description": "",
-    "version_id": 1702101317,
-    "version_string": "1.0.3",
+    "version_id": 1702104948,
+    "version_string": "1.0.4",
     "dev": "Atelier Aphelion",
     "dev_url": "https://atelieraphelion.com",
     "faq_url": "",
     "support_url": "",
-    "extra_urls": [],
+    "extra_urls": {
+        "Add-on site": "https://atelieraphelion.com/products/dynamic-thread-url-descriptions-for-embedding.190/"
+    },
     "require": {
         "XF": [
             2020070,

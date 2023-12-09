@@ -153,15 +153,6 @@ SV.PageView = SV.PageView || {};
                     }
                 }
             });
-            // disconnect posts which no longer exist
-            for (var postId in oldWatches) {
-                if (!(postId in allWatches)) {
-                    var $observeTarget = $('#js-post-' + postId).find(watchSelector);
-                    $observeTarget.each(function(){
-                        intersectionObserver.unobserve(this);
-                    });
-                }
-            }
             watchedPostIds = allWatches;
         }
 

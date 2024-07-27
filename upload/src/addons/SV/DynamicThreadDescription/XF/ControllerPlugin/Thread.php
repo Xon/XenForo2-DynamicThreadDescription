@@ -9,6 +9,7 @@ class Thread extends XFCP_Thread
 {
     /**
      * Replace the entire function to add a ?post=<post_id> argument
+     * Only do this for robots to avoid normal users copying the ?post_id=<post_id> link
      *
      * @param \XF\Entity\Post $post
      * @return string
@@ -16,6 +17,12 @@ class Thread extends XFCP_Thread
      */
     public function getPostLink(\XF\Entity\Post $post)
     {
+        $robotName = \XF::app()->request()->getRobotName();
+        if ($robotName === '')
+        {
+            return parent::getPostLink($post);
+        }
+
         $thread = $post->Thread;
         if (!$thread)
         {

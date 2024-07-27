@@ -2,10 +2,8 @@
 
 namespace SV\DynamicThreadDescription\XF\ControllerPlugin;
 
-
-
 /**
- * Extends \XF\ControllerPlugin\Thread
+ * @Extends \XF\ControllerPlugin\Thread
  */
 class Thread extends XFCP_Thread
 {

@@ -7,7 +7,7 @@
 namespace SV\DynamicThreadDescription\XF\Entity;
 
 /**
- * Extends \XF\Entity\Post
+ * @Extends \XF\Entity\Post
  */
 class Post extends XFCP_Post
 {

@@ -7,7 +7,7 @@ use XF\Mvc\ParameterBag;
 use XF\Mvc\Reply\View as ViewReply;
 
 /**
- * Extends \XF\Pub\Controller\Thread
+ * @Extends \XF\Pub\Controller\Thread
  */
 class Thread extends XFCP_Thread
 {
